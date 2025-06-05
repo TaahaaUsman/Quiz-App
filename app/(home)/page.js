@@ -8,11 +8,11 @@ export default async function Page() {
 
   // ⏱️ Call both APIs at the same time
   const [resUser, resCourses] = await Promise.all([
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/getUser`, {
+    fetch(`/api/auth/getUser`, {
       cache: "no-store",
       headers: { Cookie: cookie },
     }),
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/courses/getBookmarked`, {
+    fetch(`/api/courses/getBookmarked`, {
       cache: "no-store",
       headers: { Cookie: cookie },
     }),

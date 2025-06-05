@@ -6,7 +6,7 @@ const getCourseList = async () => {
   const cookie = headersList.get("cookie") || "";
 
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/courses`, {
+    const res = await fetch(`/api/courses`, {
       headers: { Cookie: cookie },
     });
 
