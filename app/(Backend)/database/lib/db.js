@@ -15,7 +15,7 @@ const connectToDatabase = async () => {
 
   if (!cached.promise) {
     cached.promise = mongoose
-      .connect(process.env.MongoDB_URI, {
+      .connect(process.env.MONGODB_URI, {
         bufferCommands: false,
       })
       .then((mongoose) => {
