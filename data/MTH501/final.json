@@ -1,0 +1,1454 @@
+[
+  {
+    "id": 1,
+    "text": "For a square matrix A, a non-zero vector x is an eigenvector of A if Ax is a scalar multiple of what?",
+    "options": [
+      "The zero vector",
+      "Another matrix",
+      "The identity matrix",
+      "x itself"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 2,
+    "text": "The scalar λ (lambda) in the equation Ax = λx is called an:",
+    "options": [
+      "Eigenvector",
+      "Eigenvalue",
+      "Eigenspace",
+      "Eigenmatrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 3,
+    "text": "The set of all eigenvectors corresponding to a particular eigenvalue λ, along with the zero vector, forms a subspace called the:",
+    "options": [
+      "Row space",
+      "Column space",
+      "Null space",
+      "Eigenspace"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 4,
+    "text": "To find the eigenvalues of a matrix A, one must solve which equation?",
+    "options": [
+      "Ax = 0",
+      "Ax = x",
+      "det(A - λI) = 0",
+      "Aλ = I"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 5,
+    "text": "What is the equation det(A - λI) = 0 commonly known as?",
+    "options": [
+      "The secular equation",
+      "The linear equation",
+      "The characteristic equation",
+      "The identity equation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 6,
+    "text": "If λ is an eigenvalue of A, then the eigenvectors corresponding to λ are the non-trivial solutions of what equation?",
+    "options": [
+      "(A - λI)x = λx",
+      "(A - λI)x = 0",
+      "Ax = I",
+      "Ax = 0"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 7,
+    "text": "What does I represent in the characteristic equation det(A - λI) = 0?",
+    "options": [
+      "The zero matrix",
+      "The identity matrix",
+      "The inverse of A",
+      "A scalar constant"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 8,
+    "text": "If v1, ..., vp are eigenvectors corresponding to distinct eigenvalues λ1, ..., λp of an n x n matrix A, then the set {v1, ..., vp} is:",
+    "options": [
+      "Linearly dependent",
+      "Linearly independent",
+      "Orthogonal",
+      "A basis for R^n"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 9,
+    "text": "What is the process of finding the eigenvalues and corresponding eigenvectors of a matrix called?",
+    "options": [
+      "Diagonalization",
+      "Triangularization",
+      "Eigensystem analysis",
+      "Inversion"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 10,
+    "text": "If a matrix A is triangular (upper or lower), what are its eigenvalues?",
+    "options": [
+      "All zeros",
+      "All ones",
+      "The entries on its main diagonal",
+      "The sum of its entries"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 11,
+    "text": "What is the dimension of the eigenspace corresponding to an eigenvalue λ?",
+    "options": [
+      "The number of rows in the matrix",
+      "The number of free variables in the equation (A - λI)x = 0",
+      "The rank of the matrix A",
+      "The number of eigenvalues"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 12,
+    "text": "If 0 is an eigenvalue of a matrix A, what does this imply about A?",
+    "options": [
+      "A is invertible",
+      "A is singular (not invertible)",
+      "A is an identity matrix",
+      "A has no eigenvectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 13,
+    "text": "When finding eigenvectors, after solving (A - λI)x = 0, the general solution of x will be expressed in terms of:",
+    "options": [
+      "Specific constants",
+      "The eigenvalue λ",
+      "Free variables",
+      "The determinant of A"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 14,
+    "text": "If x is an eigenvector corresponding to an eigenvalue λ, and c is a non-zero scalar, then cx is also an eigenvector corresponding to λ. This indicates that an eigenspace is closed under:",
+    "options": [
+      "Matrix multiplication",
+      "Vector subtraction",
+      "Scalar multiplication",
+      "Cross product"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 15,
+    "text": "What is the process of expressing a matrix A as P D P^-1, where D is a diagonal matrix, called?",
+    "options": [
+      "Matrix inversion",
+      "Orthogonalization",
+      "Diagonalization",
+      "Triangularization"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 16,
+    "text": "In the diagonalization A = P D P^-1, what do the columns of P consist of?",
+    "options": [
+      "The eigenvalues of A",
+      "The eigenvectors of A",
+      "The rows of the identity matrix",
+      "The singular values of A"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 17,
+    "text": "In the diagonalization A = P D P^-1, what do the diagonal entries of D consist of?",
+    "options": [
+      "The eigenvectors of A",
+      "The eigenvalues of A",
+      "Zeros and ones",
+      "The trace of A"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 18,
+    "text": "A matrix A is diagonalizable if and only if there are enough what to form a basis for R^n?",
+    "options": [
+      "Linearly dependent vectors",
+      "Orthogonal vectors",
+      "Eigenvectors",
+      "Zero vectors"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 19,
+    "text": "If the characteristic equation of an n x n matrix has n distinct eigenvalues, then the matrix is:",
+    "options": [
+      "Not diagonalizable",
+      "Diagonalizable",
+      "Singular",
+      "Symmetric"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 20,
+    "text": "For a matrix A, the algebraic multiplicity of an eigenvalue is its multiplicity as a root of what?",
+    "options": [
+      "The main diagonal",
+      "The determinant of A",
+      "The characteristic equation",
+      "The eigenvector equation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 21,
+    "text": "A matrix A is diagonalizable if it is similar to which type of matrix?",
+    "options": [
+      "An identity matrix",
+      "A zero matrix",
+      "A diagonal matrix",
+      "A triangular matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 22,
+    "text": "According to the Diagonalization Theorem, an n x n matrix A is diagonalizable if and only if A has n linearly independent:",
+    "options": [
+      "Eigenvalues",
+      "Rows",
+      "Eigenvectors",
+      "Columns"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 23,
+    "text": "If an n x n matrix has n distinct eigenvalues, then it is necessarily:",
+    "options": [
+      "Not diagonalizable",
+      "Symmetric",
+      "Diagonalizable",
+      "Singular"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 24,
+    "text": "When a matrix has repeated eigenvalues, what condition must be met for it to be diagonalizable?",
+    "options": [
+      "The algebraic multiplicity must be greater than the geometric multiplicity",
+      "The geometric multiplicity of each eigenvalue must equal its algebraic multiplicity",
+      "The geometric multiplicity must be zero",
+      "The algebraic multiplicity must be zero"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 25,
+    "text": "For a linear transformation T(x) = Ax, if x is an eigenvector, then T(x) is a scalar multiple of what?",
+    "options": [
+      "The zero vector",
+      "The identity vector",
+      "The vector x itself",
+      "Another eigenvector"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 26,
+    "text": "In the context of linear transformations, an eigenvector of a matrix A determines a direction in which the transformation T(x) = Ax acts by:",
+    "options": [
+      "Rotating the vector",
+      "Scaling the vector",
+      "Translating the vector",
+      "Projecting the vector"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 27,
+    "text": "A system of first-order linear differential equations can often be solved using the concepts of:",
+    "options": [
+      "Matrix inversion and determinants",
+      "Eigenvalues and eigenvectors",
+      "Gaussian elimination and row reduction",
+      "Matrix transpose and orthogonality"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 28,
+    "text": "In the context of differential equations, if x(t) = v e^(λt) is a solution, v must be an eigenvector of the coefficient matrix and λ must be its corresponding:",
+    "options": [
+      "Eigenvector",
+      "Scalar multiple",
+      "Eigenvalue",
+      "Determinant"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 29,
+    "text": "A Markov chain describes a sequence of what?",
+    "options": [
+      "Independent events",
+      "Random variables whose future state depends only on its current state",
+      "Deterministic processes",
+      "Linear equations"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 30,
+    "text": "In a Markov chain, the matrix whose columns are probability vectors is called a:",
+    "options": [
+      "Identity matrix",
+      "Invertible matrix",
+      "Stochastic matrix",
+      "Diagonal matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 31,
+    "text": "The long-term probability distribution of a Markov chain, if it exists, is called the:",
+    "options": [
+      "Transient state",
+      "Initial state",
+      "Steady-state vector",
+      "Periodic state"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 32,
+    "text": "For a regular stochastic matrix P, the steady-state vector q is the unique probability vector that satisfies:",
+    "options": [
+      "Pq = 0",
+      "Pq = I",
+      "Pq = q",
+      "Pq = P"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 33,
+    "text": "The inner product of two vectors u and v in R^n is also known as the:",
+    "options": [
+      "Cross product",
+      "Vector product",
+      "Dot product",
+      "Scalar projection"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 34,
+    "text": "The length of a vector v in R^n is defined as the square root of what?",
+    "options": [
+      "The sum of its components",
+      "Its dot product with itself",
+      "Its dot product with another vector",
+      "Its projection onto an axis"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 35,
+    "text": "The distance between two vectors u and v is the length of which vector?",
+    "options": [
+      "u + v",
+      "u - v",
+      "u * v",
+      "u / v"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 36,
+    "text": "Two vectors u and v in R^n are orthogonal if their inner product (dot product) is equal to:",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Any positive number"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 37,
+    "text": "For a subspace W of R^n, the set of all vectors z that are orthogonal to every vector in W is called the:",
+    "options": [
+      "Column space of W",
+      "Row space of W",
+      "Orthogonal complement of W",
+      "Null space of W"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 38,
+    "text": "If a vector z is orthogonal to every vector in a subspace W, it is also orthogonal to every linear combination of vectors in W. This implies that W-perpendicular is a:",
+    "options": [
+      "Vector",
+      "Scalar",
+      "Subspace",
+      "Matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 39,
+    "text": "The row space of a matrix A is orthogonal to which space?",
+    "options": [
+      "The column space of A",
+      "The null space of A",
+      "The row space of A transpose",
+      "The eigenspace of A"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 40,
+    "text": "If W is a subspace of R^n, then the orthogonal complement of W, denoted W-perp, is also a:",
+    "options": [
+      "Vector",
+      "Scalar",
+      "Subspace of R^n",
+      "Matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 41,
+    "text": "What does a set of vectors {v1, ..., vp} form if all pairs of distinct vectors in the set are orthogonal?",
+    "options": [
+      "A linearly dependent set",
+      "An orthogonal set",
+      "An orthonormal set",
+      "A basis"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 42,
+    "text": "If an orthogonal set of non-zero vectors is linearly independent, what can it be used as?",
+    "options": [
+      "A scalar",
+      "A matrix",
+      "A basis for a subspace",
+      "A single vector"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 43,
+    "text": "For an orthogonal basis {u1, ..., up} for a subspace W, what is the formula for the weights in expressing y as a linear combination of the basis vectors?",
+    "options": [
+      "c_j = (y.u_j) / ||u_j||",
+      "c_j = (y.u_j) / ||u_j||^2",
+      "c_j = ||y|| / ||u_j||",
+      "c_j = y.u_j"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 44,
+    "text": "What is an orthonormal set of vectors?",
+    "options": [
+      "An orthogonal set where all vectors are zero",
+      "An orthogonal set where all vectors have length one",
+      "A linearly dependent set of vectors",
+      "A set of vectors that are multiples of each other"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 45,
+    "text": "If U is an m x n matrix with orthonormal columns, then U^T U equals what?",
+    "options": [
+      "The zero matrix",
+      "The identity matrix I_n",
+      "The identity matrix I_m",
+      "The transpose of U"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 46,
+    "text": "A square matrix U whose columns form an orthonormal set is called an:",
+    "options": [
+      "Diagonal matrix",
+      "Symmetric matrix",
+      "Orthogonal matrix",
+      "Triangular matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 47,
+    "text": "If U is an orthogonal matrix, then U^-1 is equal to what?",
+    "options": [
+      "U",
+      "U^T",
+      "-U",
+      "I"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 48,
+    "text": "The orthogonal projection of a vector y onto a subspace W is defined as the unique vector in W such that y - y_hat is orthogonal to every vector in:",
+    "options": [
+      "The column space",
+      "The row space",
+      "W",
+      "R^n"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 49,
+    "text": "The Orthogonal Decomposition Theorem states that every vector y in R^n can be uniquely written as the sum of a vector in W and a vector in what other space?",
+    "options": [
+      "The null space",
+      "The column space",
+      "The orthogonal complement of W (W-perp)",
+      "The span of y"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 50,
+    "text": "To find the orthogonal projection of y onto W when W has an orthogonal basis, one can use a formula involving inner products and lengths. What is the sum of?",
+    "options": [
+      "Projections onto each basis vector",
+      "Scalar multiples of each basis vector",
+      "Cross products",
+      "Determinants"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 51,
+    "text": "If U is an orthogonal matrix, then for any x in R^n, ||Ux|| equals what?",
+    "options": [
+      "0",
+      "1",
+      "||x||",
+      "||U||"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 52,
+    "text": "The best approximation to y by vectors in W is given by what?",
+    "options": [
+      "The vector y itself",
+      "The zero vector",
+      "The orthogonal projection of y onto W",
+      "The closest vector to y in W"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 53,
+    "text": "If {u1, ..., up} is an orthogonal basis for a subspace W, what is the projection of y onto W?",
+    "options": [
+      "The sum of (y.u_i)u_i",
+      "The sum of ((y.u_i)/||u_i||^2)u_i",
+      "The average of the u_i vectors",
+      "The determinant of the matrix formed by u_i"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 54,
+    "text": "The Gram-Schmidt process is used to transform a basis for a subspace into what kind of basis?",
+    "options": [
+      "A linearly dependent basis",
+      "A non-orthogonal basis",
+      "An orthogonal basis",
+      "A basis of eigenvectors"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 55,
+    "text": "The Gram-Schmidt process maintains what property of the span of the original vectors?",
+    "options": [
+      "It changes the span",
+      "It preserves the span at each step",
+      "It reduces the span",
+      "It expands the span"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 56,
+    "text": "The QR factorization of a matrix A (with linearly independent columns) is given by A = QR, where Q has what kind of columns?",
+    "options": [
+      "Linearly dependent",
+      "Orthogonal",
+      "Orthonormal",
+      "Zero"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 57,
+    "text": "In the QR factorization A = QR, what kind of matrix is R?",
+    "options": [
+      "Lower triangular with positive diagonal entries",
+      "Upper triangular with positive diagonal entries",
+      "Diagonal",
+      "Symmetric"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 58,
+    "text": "What is a primary application of the Gram-Schmidt process and QR factorization?",
+    "options": [
+      "Solving non-linear equations",
+      "Finding determinants of matrices",
+      "Least-squares problems and solving systems with ill-conditioned matrices",
+      "Calculating eigenvalues"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 59,
+    "text": "What does a least-squares solution x-hat of Ax = b do?",
+    "options": [
+      "Makes Ax equal to b exactly",
+      "Minimizes the distance ||b - Ax||",
+      "Maximizes the distance ||b - Ax||",
+      "Makes Ax orthogonal to b"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 60,
+    "text": "The least-squares solutions of Ax = b are precisely the solutions of the normal equations:",
+    "options": [
+      "A^T Ax = A^T b",
+      "Ax = 0",
+      "A^-1 x = b",
+      "Ax = A^T b"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 61,
+    "text": "In a least-squares problem Ax = b, what do the normal equations A^T Ax = A^T b guarantee?",
+    "options": [
+      "A unique solution for x",
+      "A solution that exactly satisfies Ax = b",
+      "A solution that minimizes ||b - Ax||",
+      "A solution where x is orthogonal to b"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 62,
+    "text": "Geometrically, the least-squares solution x-hat of Ax = b results in Ax-hat being the orthogonal projection of b onto which subspace?",
+    "options": [
+      "The row space of A",
+      "The null space of A",
+      "The column space of A",
+      "The eigenspace of A"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 63,
+    "text": "What type of function is typically found using a least-squares approach to fit data points?",
+    "options": [
+      "A sinusoidal curve",
+      "A quadratic curve",
+      "A least-squares line or polynomial",
+      "An exponential decay function"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 64,
+    "text": "An inner product on a vector space V is a function that assigns a real number <u,v> to each pair of vectors u and v in V, satisfying which properties?",
+    "options": [
+      "Only commutativity",
+      "Only associativity",
+      "Linearity, symmetry, and positive definiteness",
+      "Only scalar multiplication"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 65,
+    "text": "A vector space V with an inner product defined on it is called an:",
+    "options": [
+      "Outer product space",
+      "Euclidean space",
+      "Inner product space",
+      "Vector subspace"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 66,
+    "text": "The length (or norm) of a vector v in an inner product space is defined using the inner product as:",
+    "options": [
+      "<v,v>",
+      "sqrt(<v,v>)",
+      "||v||^2",
+      "|v|"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 67,
+    "text": "Two vectors u and v in an inner product space are orthogonal if their inner product <u,v> equals:",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "The product of their lengths"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 68,
+    "text": "The Gram-Schmidt process can be applied to any basis of an inner product space to produce what type of basis?",
+    "options": [
+      "A linearly dependent basis",
+      "An orthogonal basis",
+      "A non-orthogonal basis",
+      "A basis of eigenvectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 69,
+    "text": "What type of functions can be approximated using Fourier series, which are based on an orthogonal set of trigonometric functions?",
+    "options": [
+      "Polynomials",
+      "Continuous periodic functions",
+      "Linear functions",
+      "Exponential functions"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 70,
+    "text": "In weighted least-squares problems, what is used to assign different levels of importance to data points?",
+    "options": [
+      "Scaling factors for variables",
+      "Weight matrices",
+      "The identity matrix",
+      "The inverse of the coefficient matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 71,
+    "text": "A square matrix A is called symmetric if what condition holds?",
+    "options": [
+      "A = -A",
+      "A = A^-1",
+      "A = A^T",
+      "A = I"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 72,
+    "text": "For a symmetric matrix, if eigenvectors correspond to distinct eigenvalues, what is their relationship?",
+    "options": [
+      "They are linearly dependent",
+      "They are orthogonal",
+      "They are identical",
+      "They span the same subspace"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 73,
+    "text": "The Spectral Theorem for Symmetric Matrices states that a symmetric matrix A is orthogonally diagonalizable. What does 'orthogonally diagonalizable' mean?",
+    "options": [
+      "It can be diagonalized by any invertible matrix",
+      "It can be diagonalized by an orthogonal matrix P",
+      "Its eigenvalues are all distinct",
+      "Its eigenvectors are all zero"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 74,
+    "text": "If A is a symmetric matrix, then the geometric multiplicity of each eigenvalue equals its:",
+    "options": [
+      "Rank",
+      "Nullity",
+      "Algebraic multiplicity",
+      "Determinant"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 75,
+    "text": "A quadratic form is a function defined as f(x) = x^T Ax, where A is what type of matrix?",
+    "options": [
+      "An identity matrix",
+      "A triangular matrix",
+      "A symmetric matrix",
+      "A diagonal matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 76,
+    "text": "The 'principal axes' of a quadratic form correspond to which vectors of the associated symmetric matrix A?",
+    "options": [
+      "The standard basis vectors",
+      "The eigenvectors",
+      "The zero vector",
+      "The rows"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 77,
+    "text": "A quadratic form Q(x) is classified as positive definite if Q(x) > 0 for all x:",
+    "options": [
+      "Equal to zero",
+      "In a specific subspace",
+      "Not equal to zero",
+      "With negative entries"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 78,
+    "text": "If all eigenvalues of the symmetric matrix A associated with a quadratic form Q(x) are positive, then Q(x) is:",
+    "options": [
+      "Negative definite",
+      "Positive semidefinite",
+      "Indefinite",
+      "Positive definite"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 79,
+    "text": "What is the Singular Value Decomposition (SVD) of an m x n matrix A?",
+    "options": [
+      "A = LU, where L is lower and U is upper triangular",
+      "A = PDP^-1, where D is diagonal",
+      "A = U Σ V^T, where U and V are orthogonal and Σ is diagonal",
+      "A = QR, where Q is orthogonal and R is upper triangular"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 80,
+    "text": "The diagonal entries of Σ in the SVD (A = U Σ V^T) are called the:",
+    "options": [
+      "Eigenvalues of A",
+      "Singular values of A",
+      "Determinants of A",
+      "Trace of A"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 81,
+    "text": "The singular values of A are the square roots of the eigenvalues of which matrix?",
+    "options": [
+      "A",
+      "A^T",
+      "A^T A",
+      "A A^T"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 82,
+    "text": "What are the columns of U in the SVD (A = U Σ V^T) called?",
+    "options": [
+      "Right singular vectors",
+      "Left singular vectors",
+      "Eigenvectors of A",
+      "Null vectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 83,
+    "text": "What are the columns of V in the SVD (A = U Σ V^T) called?",
+    "options": [
+      "Left singular vectors",
+      "Right singular vectors",
+      "Eigenvectors of A^T",
+      "Column vectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 84,
+    "text": "SVD is a powerful tool for analyzing rectangular matrices, extending which concept from square matrices?",
+    "options": [
+      "Determinants",
+      "Matrix inversion",
+      "Eigen-decomposition (diagonalization)",
+      "Matrix addition"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 85,
+    "text": "One important application of SVD is in dimensionality reduction, particularly in which technique?",
+    "options": [
+      "Linear Regression",
+      "Principal Component Analysis (PCA)",
+      "Cluster Analysis",
+      "Factorial ANOVA"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 86,
+    "text": "What concept allows for a matrix A to be decomposed into its constituent parts, revealing underlying structure?",
+    "options": [
+      "Matrix addition",
+      "Matrix subtraction",
+      "Matrix factorization",
+      "Matrix exponentiation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 87,
+    "text": "If a quadratic form Q(x) is negative definite, then Q(x) < 0 for all x:",
+    "options": [
+      "Equal to zero",
+      "Not equal to zero",
+      "With positive entries",
+      "In a specific subspace"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 88,
+    "text": "A quadratic form Q(x) is indefinite if Q(x) takes on:",
+    "options": [
+      "Only positive values",
+      "Only negative values",
+      "Both positive and negative values",
+      "Only zero values"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 89,
+    "text": "The change of variable x = Py can transform a quadratic form x^T Ax into a quadratic form y^T Dy that has no what?",
+    "options": [
+      "Squared terms",
+      "Constant terms",
+      "Cross-product terms",
+      "Linear terms"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 90,
+    "text": "The columns of the orthogonal matrix P in the Principal Axes Theorem are called the principal axes and are what of A?",
+    "options": [
+      "The rows",
+      "The null space basis",
+      "The eigenvectors",
+      "The column space basis"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 91,
+    "text": "What is the primary characteristic of an inner product space that distinguishes it from a general vector space?",
+    "options": [
+      "It has a basis of eigenvectors",
+      "It allows for the definition of length and orthogonality",
+      "All its vectors are linearly independent",
+      "It only contains real numbers"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 92,
+    "text": "Which of the following is an application of inner product spaces in mathematics?",
+    "options": [
+      "Solving systems of linear equations directly",
+      "Analyzing the invertibility of matrices",
+      "Approximating functions using orthogonal polynomials",
+      "Calculating the determinant of a matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 93,
+    "text": "What defines a positive semidefinite quadratic form Q(x)?",
+    "options": [
+      "Q(x) > 0 for all x != 0",
+      "Q(x) < 0 for all x != 0",
+      "Q(x) >= 0 for all x",
+      "Q(x) <= 0 for all x"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 94,
+    "text": "If a symmetric matrix A has eigenvalues that are all negative, its associated quadratic form Q(x) is:",
+    "options": [
+      "Positive definite",
+      "Negative definite",
+      "Indefinite",
+      "Positive semidefinite"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 95,
+    "text": "The Singular Value Decomposition can be used to compute the what of a matrix, even if it's not square or invertible?",
+    "options": [
+      "Determinant",
+      "Trace",
+      "Pseudo-inverse",
+      "Eigenvalues"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 96,
+    "text": "In image compression, what does SVD help achieve by setting small singular values to zero?",
+    "options": [
+      "Increased image resolution",
+      "Lossless compression",
+      "Data reduction and noise filtering",
+      "Image rotation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 97,
+    "text": "If a matrix A has orthonormal columns, then which of these properties holds?",
+    "options": [
+      "A^T A = 0",
+      "A^T A = I",
+      "A A^T = I",
+      "A = A^T"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 98,
+    "text": "The best approximation property related to orthogonal projections states that the orthogonal projection of y onto W is the closest vector in W to what?",
+    "options": [
+      "The zero vector",
+      "The original vector y",
+      "Any other vector in R^n",
+      "The average of vectors in W"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 99,
+    "text": "In the context of the Gram-Schmidt process, if a set of vectors {x1, ..., xp} is linearly independent, then the resulting orthogonal set {v1, ..., vp} has what property?",
+    "options": [
+      "Its span is different from the original set",
+      "Each v_k is orthogonal to Span{v1, ..., v_(k-1)}",
+      "Each v_k is a scalar multiple of x_k",
+      "All v_k are zero vectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 100,
+    "text": "The concept of orthogonality in inner product spaces is a generalization of which geometric concept from Euclidean space?",
+    "options": [
+      "Parallelism",
+      "Perpendicularity",
+      "Symmetry",
+      "Distance"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 101,
+    "text": "In image processing, what is a common application of the Singular Value Decomposition?",
+    "options": [
+      "Image rotation",
+      "Image compression and noise reduction",
+      "Image colorization",
+      "Image cropping"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 102,
+    "text": "An affine transformation is a linear transformation followed by a:",
+    "options": [
+      "Rotation",
+      "Scaling",
+      "Translation",
+      "Reflection"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 103,
+    "text": "What are homogeneous coordinates used for in computer graphics?",
+    "options": [
+      "Representing 2D points only",
+      "Representing rotations only",
+      "Representing translations and perspective projections as matrix multiplications",
+      "Representing colors"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 104,
+    "text": "In computer graphics, a 2D point (x, y) can be represented in homogeneous coordinates as:",
+    "options": [
+      "(x, y, 0)",
+      "(x, y, 1)",
+      "(0, x, y)",
+      "(1, x, y)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 105,
+    "text": "Projective geometry is a form of geometry that deals with properties that are invariant under:",
+    "options": [
+      "Rigid transformations",
+      "Affine transformations",
+      "Perspective transformations",
+      "Rotations"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 106,
+    "text": "What is the imaginary unit 'i' defined as?",
+    "options": [
+      "sqrt(1)",
+      "sqrt(-1)",
+      "0",
+      "1"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 107,
+    "text": "A complex number z is written in the form a + bi, where 'a' is the real part and 'b' is the:",
+    "options": [
+      "Constant part",
+      "Imaginary part",
+      "Vector part",
+      "Scalar part"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 108,
+    "text": "The conjugate of a complex number z = a + bi is:",
+    "options": [
+      "a + bi",
+      "a - bi",
+      "-a + bi",
+      "-a - bi"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 109,
+    "text": "In complex vector spaces, the inner product of two complex vectors u and v is usually defined as:",
+    "options": [
+      "u^T v",
+      "u^* v (where u^* is the conjugate transpose of u)",
+      "u v",
+      "u + v"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 110,
+    "text": "What is a Hermitian matrix?",
+    "options": [
+      "A matrix that is equal to its transpose",
+      "A matrix that is equal to its conjugate transpose",
+      "A matrix with only real entries",
+      "A matrix with only imaginary entries"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 111,
+    "text": "The eigenvalues of a Hermitian matrix are always:",
+    "options": [
+      "Complex numbers",
+      "Imaginary numbers",
+      "Real numbers",
+      "Zero"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 112,
+    "text": "A unitary matrix U is a complex square matrix such that U^* U equals what?",
+    "options": [
+      "The zero matrix",
+      "The identity matrix",
+      "Itself",
+      "Its inverse"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 113,
+    "text": "The columns of a unitary matrix form an orthonormal basis with respect to which inner product?",
+    "options": [
+      "The standard dot product",
+      "The complex inner product",
+      "The cross product",
+      "The outer product"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 114,
+    "text": "Schur's Theorem states that any complex square matrix A can be unitarily similar to a what kind of matrix?",
+    "options": [
+      "Diagonal matrix",
+      "Symmetric matrix",
+      "Upper triangular matrix",
+      "Hermitian matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 115,
+    "text": "A square matrix A is positive definite if for all non-zero vectors x, the quadratic form x^T A x is:",
+    "options": [
+      "Negative",
+      "Zero",
+      "Positive",
+      "Undefined"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 116,
+    "text": "If a symmetric matrix A is positive definite, then all its eigenvalues are:",
+    "options": [
+      "Negative",
+      "Zero",
+      "Positive",
+      "Complex"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 117,
+    "text": "Positive definite matrices appear in which optimization problems?",
+    "options": [
+      "Maximization problems",
+      "Minimization problems",
+      "Linear programming",
+      "Game theory"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 118,
+    "text": "In the context of the general linear model, what do the column vectors of the design matrix X typically represent?",
+    "options": [
+      "Response variables",
+      "Error terms",
+      "Predictor variables or features",
+      "Residuals"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 119,
+    "text": "The general linear model is a statistical linear model that relates a dependent variable to one or more independent variables using what type of relationship?",
+    "options": [
+      "Non-linear",
+      "Exponential",
+      "Linear",
+      "Quadratic"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 120,
+    "text": "The coefficients in a general linear model are often estimated using which method?",
+    "options": [
+      "Maximum likelihood estimation",
+      "Ordinary Least Squares (OLS)",
+      "Newton-Raphson method",
+      "Gradient descent"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 121,
+    "text": "The concept of positive definiteness is crucial in determining the nature of what in multivariable calculus?",
+    "options": [
+      "Local maxima",
+      "Local minima",
+      "Saddle points",
+      "Both local maxima and minima"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 122,
+    "text": "What is the purpose of the normal equations in the general linear model?",
+    "options": [
+      "To find the eigenvalues of the design matrix",
+      "To estimate the coefficients that minimize the sum of squared errors",
+      "To transform the data to a higher dimension",
+      "To determine the rank of the matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 123,
+    "text": "In computer vision, what type of transformation accounts for vanishing points and parallel lines converging?",
+    "options": [
+      "Rotation",
+      "Scaling",
+      "Affine transformation",
+      "Perspective transformation"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 124,
+    "text": "The set of all complex numbers C is a what-dimensional vector space over the real numbers R?",
+    "options": [
+      "One-dimensional",
+      "Two-dimensional",
+      "Three-dimensional",
+      "N-dimensional"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 125,
+    "text": "For a complex matrix A, its conjugate transpose is denoted by:",
+    "options": [
+      "A^T",
+      "A^-1",
+      "A*",
+      "A^H (or A^*)"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 126,
+    "text": "Which theorem states that any square matrix is unitarily similar to an upper triangular matrix?",
+    "options": [
+      "Spectral Theorem",
+      "Schur's Theorem",
+      "Cayley-Hamilton Theorem",
+      "Invertible Matrix Theorem"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 127,
+    "text": "A matrix is positive semidefinite if x^T A x is greater than or equal to zero for all x. What can be said about its eigenvalues?",
+    "options": [
+      "All are negative",
+      "All are complex",
+      "All are non-negative",
+      "Some are negative, some are positive"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 128,
+    "text": "The least-squares line is a fundamental concept in:",
+    "options": [
+      "Abstract algebra",
+      "Calculus of variations",
+      "Linear regression",
+      "Topology"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 129,
+    "text": "What type of transformation does not preserve parallelism but preserves collinearity?",
+    "options": [
+      "Rotation",
+      "Scaling",
+      "Affine transformation",
+      "Projective transformation"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 130,
+    "text": "In quantum mechanics, what do Hermitian operators correspond to?",
+    "options": [
+      "Complex numbers",
+      "Observable physical quantities",
+      "Linear transformations",
+      "Eigenvectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 131,
+    "text": "What is the significance of Schur's Theorem in terms of matrix similarity?",
+    "options": [
+      "It shows that every matrix is diagonalizable",
+      "It proves that every matrix is symmetric",
+      "It shows that every matrix is unitarily similar to a triangular matrix, which simplifies eigenvalue analysis",
+      "It states that matrices can only be similar if they have the same determinant"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 132,
+    "text": "In the general linear model, what are the assumptions about the error terms?",
+    "options": [
+      "They are always zero",
+      "They are non-linear",
+      "They are typically assumed to be independent, identically distributed, and normally distributed with mean zero",
+      "They are always constants"
+    ],
+    "correct": 3
+  }
+]

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MTH101</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+        margin: 0;
+        padding: 2rem;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #ffffffcc;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        color: #34495e;
+        border-left: 6px solid #2980b9;
+        padding-left: 10px;
+        margin-top: 2rem;
+      }
+      ul {
+        margin: 1rem 0;
+        padding-left: 1.2rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      code {
+        background-color: #ecf0f1;
+        padding: 0.2rem 0.4rem;
+        border-radius: 5px;
+      }
+      .emoji {
+        font-size: 1.4rem;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lecture 1: Coordinates, Graphs, and Lines</h1>
+
+      <h2><span class="emoji">📘</span>1. What is Calculus?</h2>
+      <ul>
+        <li>
+          Calculus is a part of mathematics that studies
+          <strong>how things change</strong>.
+        </li>
+        <li>
+          It helps us understand how one quantity changes when another quantity
+          changes.
+        </li>
+        <li>
+          <strong>Examples:</strong> A car is moving — we use calculus to know
+          how fast it is going at any time.
+        </li>
+      </ul>
+
+      <h2><span class="emoji">🔢</span>2. Real Numbers</h2>
+      <ul>
+        <li><strong>Natural Numbers (ℕ):</strong> 1, 2, 3, ...</li>
+        <li><strong>Whole Numbers:</strong> 0, 1, 2, 3, ...</li>
+        <li><strong>Integers (ℤ):</strong> ..., -3, -2, -1, 0, 1, 2, ...</li>
+        <li>
+          <strong>Rational Numbers (ℚ):</strong> Can be written as a fraction
+          (p/q). Example: 1/2, -3/4
+        </li>
+        <li>
+          <strong>Irrational Numbers:</strong> Cannot be written as a fraction.
+          Decimal never ends or repeats. Example: √2, π
+        </li>
+      </ul>
+
+      <h2><span class="emoji">🧠</span>3. What is a Set?</h2>
+      <ul>
+        <li>
+          A <strong>set</strong> is a group or collection of things. Example:
+          {a, e, i, o, u}
+        </li>
+        <li>
+          <strong>Subset:</strong> A set that has only some or all elements from
+          another set. A ⊆ B
+        </li>
+      </ul>
+
+      <h2><span class="emoji">⚠️</span>4. Why Can't We Divide by Zero?</h2>
+      <ul>
+        <li>Dividing by 0 is <strong>not allowed</strong> in math.</li>
+        <li>
+          It gives <strong>no clear answer</strong> or
+          <strong>wrong answers</strong>.
+        </li>
+        <li>So, it's called <strong>undefined</strong>.</li>
+      </ul>
+
+      <h2><span class="emoji">🔍</span>5. Discovery of Irrational Numbers</h2>
+      <ul>
+        <li>
+          <strong>Hippasus</strong>, a Greek mathematician, proved that √2 is
+          <strong>not rational</strong>.
+        </li>
+        <li>
+          This means some numbers <strong>cannot</strong> be written as
+          fractions.
+        </li>
+      </ul>
+
+      <h2><span class="emoji">📉</span>6. Number Line and Coordinates</h2>
+      <ul>
+        <li>
+          In the <strong>1600s</strong>, French thinker
+          <strong>Descartes</strong> joined math and geometry.
+        </li>
+        <li>He introduced the <strong>number line</strong>.</li>
+        <li>Left of 0 = negative numbers, Right of 0 = positive numbers.</li>
+        <li>
+          This was the start of <strong>analytic geometry</strong>, drawing
+          graphs from equations.
+        </li>
+      </ul>
+
+      <section
+        id="lecture-2"
+        style="
+          margin-top: 4rem;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.7;
+        "
+      >
+        <h2
+          style="
+            font-size: 2.2em;
+            color: #1f4e79;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          📘 Lecture 2: Absolute Value
+        </h2>
+
+        <p>
+          <strong>Absolute value</strong> tells us how far a number is from
+          <strong>zero</strong> on the number line. It is always
+          <strong>positive</strong> or <strong>zero</strong>. We write it like
+          this: <code>|a|</code>.
+        </p>
+
+        <h3 style="color: #2980b9">🧠 What does it mean?</h3>
+        <p>
+          If a number is already positive or zero, we don’t change anything. But
+          if it is negative, we remove the minus sign.
+        </p>
+
+        <h4>➡️ Definition:</h4>
+        <ul style="list-style: disc; margin-left: 2rem">
+          <li>If <code>a ≥ 0</code>, then <code>|a| = a</code></li>
+          <li>If <code>a &lt; 0</code>, then <code>|a| = -a</code></li>
+        </ul>
+
+        <h4>➡️ Easy Examples:</h4>
+        <ul style="list-style: disc; margin-left: 2rem">
+          <li><code>|5| = 5</code></li>
+          <li><code>|-4/7| = 4/7</code></li>
+          <li><code>|0| = 0</code></li>
+        </ul>
+
+        <h3 style="color: #2980b9">🧩 Solving Equations</h3>
+        <p>Like <code>|x - 3| = 4</code>, gives:</p>
+        <ul style="list-style: disc; margin-left: 2rem">
+          <li><code>x - 3 = 4 → x = 7</code></li>
+          <li><code>x - 3 = -4 → x = -1</code></li>
+        </ul>
+
+        <h3 style="color: #2980b9">🧮 Square Root with Absolute</h3>
+        <p><code>√(a²) = |a|</code> – always gives a positive answer.</p>
+
+        <h3 style="color: #2980b9">⚙️ Properties</h3>
+        <ul style="list-style: disc; margin-left: 2rem">
+          <li><code>|-a| = |a|</code></li>
+          <li><code>|a × b| = |a| × |b|</code></li>
+          <li><code>|a / b| = |a| / |b|</code></li>
+          <li><code>|a1 × a2 × ... × an| = |a1| × ... × |an|</code></li>
+        </ul>
+
+        <h3 style="color: #2980b9">📏 Geometry Use</h3>
+        <p>
+          Distance between <code>a</code> and <code>b</code> =
+          <code>|b - a|</code>
+        </p>
+      </section>
+
+      <section class="lecture">
+        <h2>Lecture 3: Coordinate Planes and Graphs</h2>
+
+        <p>In this lecture, we will learn about:</p>
+        <ul>
+          <li>Graphs in the coordinate plane</li>
+          <li>Intercepts</li>
+          <li>Symmetry</li>
+        </ul>
+
+        <h3>What is a Coordinate Plane?</h3>
+        <p>
+          A coordinate plane is made when two number lines cross each other at
+          90 degrees. These lines are called the x-axis and y-axis.
+        </p>
+        <p>
+          Every point on this plane can be shown using a pair of numbers, like
+          (4, 3). These are called ordered pairs.
+        </p>
+
+        <h3>How to Plot a Point</h3>
+        <p>
+          To draw a point (a, b) on the plane, move "a" units on the x-axis and
+          "b" units on the y-axis.
+        </p>
+        <p>
+          For example, the point (2, 5) means: move 2 steps right and 5 steps
+          up.
+        </p>
+
+        <h3>What is the XY-Plane?</h3>
+        <p>
+          We usually name the horizontal line as x and the vertical line as y.
+          So the plane becomes the "xy-plane". But we can also use other letters
+          like u and v.
+        </p>
+
+        <h3>Quadrants</h3>
+        <p>
+          The coordinate plane is divided into 4 areas called "quadrants". They
+          are numbered with Roman numbers in a counter-clockwise direction: I,
+          II, III, IV.
+        </p>
+
+        <h3>Solutions of Equations</h3>
+        <p>
+          If a pair like (3, 2) satisfies an equation like
+          <strong>6x − 4y = 10</strong>, it is called a solution.
+        </p>
+        <p>
+          To check, just put x = 3 and y = 2 in the equation. If it becomes
+          true, then it is a solution.
+        </p>
+
+        <h3>What is a Graph of an Equation?</h3>
+        <p>The graph is all the points (x, y) that make the equation true.</p>
+        <p>
+          Example: For the equation <strong>y = x/2</strong>, the graph will be
+          a line showing points like (2, 1), (4, 2), etc.
+        </p>
+
+        <h3>Intercepts</h3>
+        <p>
+          These are the points where the graph touches the x-axis or y-axis.
+        </p>
+        <ul>
+          <li>If y = 0, the point is on x-axis → x-intercept</li>
+          <li>If x = 0, the point is on y-axis → y-intercept</li>
+        </ul>
+
+        <h3>Symmetry</h3>
+        <p>Symmetry means the graph looks the same on both sides.</p>
+        <ul>
+          <li>Symmetry about x-axis: (x, y) → (x, -y)</li>
+          <li>Symmetry about y-axis: (x, y) → (-x, y)</li>
+          <li>Symmetry about origin: (x, y) → (-x, -y)</li>
+        </ul>
+
+        <h4>Why is Symmetry Useful?</h4>
+        <p>
+          If a graph is symmetric, we only need to draw one part. The other part
+          can be made by copying with a mirror image.
+        </p>
+
+        <h3>Example: Graph of y = (x² - 21x)/8</h3>
+        <p>
+          This equation is symmetric about the y-axis. So we only need to find
+          values for x ≥ 0. The values for x < 0 will be same y-values but x
+          will be negative.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

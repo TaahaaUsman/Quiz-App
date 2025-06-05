@@ -1,0 +1,1344 @@
+[
+  {
+    "id": 1,
+    "text": "Algebra is named in honor of which mathematician?",
+    "options": [
+      "Euclid",
+      "Pythagoras",
+      "Mohammed Ibn-e- Musa al-Khowârizmî",
+      "Isaac Newton"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 2,
+    "text": "What was the title of Mohammed Ibn-e- Musa al-Khowârizmî's book that presented rules for solving equations?",
+    "options": [
+      "Arithmetica",
+      "Elements",
+      "Hisb al-jabr u'l muqubalah",
+      "Opticks"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 3,
+    "text": "In algebra, what do letters often represent in mathematical statements?",
+    "options": [
+      "Fixed constants",
+      "Known quantities",
+      "Quantities that vary",
+      "Geometric shapes"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 4,
+    "text": "What is the basic unit of an algebraic expression?",
+    "options": [
+      "An equation",
+      "A variable",
+      "A term",
+      "A coefficient"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 5,
+    "text": "Which of the following best describes Linear Algebra?",
+    "options": [
+      "The study of non-linear equations",
+      "The study of single-variable expressions",
+      "The algebra of systems of linear equations",
+      "The study of complex numbers"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 6,
+    "text": "Linear algebra is sometimes disguised as what theory?",
+    "options": [
+      "Set theory",
+      "Matrix theory",
+      "Number theory",
+      "Graph theory"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 7,
+    "text": "Which of the following is NOT listed as an application field of Linear Algebra?",
+    "options": [
+      "Computer Graphics",
+      "Astrology",
+      "Economics",
+      "Signal Processing"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 8,
+    "text": "According to the course material, what are the central objects of study in linear algebra?",
+    "options": [
+      "Complex numbers and their properties",
+      "Polynomial functions and their roots",
+      "Vector spaces and their transformations",
+      "Geometric shapes and their measurements"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 9,
+    "text": "How many major segments cover the MTH 501 course?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "10"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 10,
+    "text": "What is the primary objective related to linear methods in the MTH 501 course?",
+    "options": [
+      "To ignore their use in real-life problems",
+      "To develop an appreciation for how linear methods are used in a variety of applications",
+      "To restrict their application to theoretical mathematics only",
+      "To exclusively focus on their computational aspects"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 11,
+    "text": "A matrix is a collection of numbers or functions arranged into what?",
+    "options": [
+      "Vectors only",
+      "Single rows",
+      "Rows and columns",
+      "Equations only"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 12,
+    "text": "What are the numbers or functions inside a matrix called?",
+    "options": [
+      "Coefficients",
+      "Variables",
+      "Elements",
+      "Scalars"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 13,
+    "text": "The size or dimension of a matrix is called its:",
+    "options": [
+      "Rank",
+      "Order",
+      "Determinant",
+      "Trace"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 14,
+    "text": "If a matrix has 'm' rows and 'n' columns, how is its order typically written?",
+    "options": [
+      "n + m",
+      "m/n",
+      "m x n",
+      "n - m"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 15,
+    "text": "What defines a square matrix?",
+    "options": [
+      "It has only one row",
+      "It has only one column",
+      "It has an equal number of rows and columns",
+      "All its elements are zero"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 16,
+    "text": "For two matrices to be equal, they must have the same dimensions and what else?",
+    "options": [
+      "They must be square matrices",
+      "Their determinants must be equal",
+      "Corresponding elements must be equal",
+      "They must be identity matrices"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 17,
+    "text": "A column matrix is also referred to as a:",
+    "options": [
+      "Row matrix",
+      "Scalar",
+      "Vector",
+      "Square matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 18,
+    "text": "When multiplying a matrix by a constant 'k', what happens to each element of the matrix?",
+    "options": [
+      "It is divided by k",
+      "It is raised to the power of k",
+      "It is multiplied by k",
+      "It remains unchanged"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 19,
+    "text": "What is the condition for adding two matrices?",
+    "options": [
+      "They must be square matrices",
+      "They must have the same number of columns",
+      "They must have the same number of rows",
+      "They must be of the same order"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 20,
+    "text": "When is the product of two matrices AB possible?",
+    "options": [
+      "When the number of rows in A equals the number of columns in B",
+      "When the number of columns in A equals the number of rows in B",
+      "When both A and B are square matrices",
+      "When A and B have the same order"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 21,
+    "text": "What is the degree of each variable in a linear equation?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Any positive integer"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 22,
+    "text": "Which of the following is NOT a characteristic of a linear equation?",
+    "options": [
+      "Variables are not multiplied together",
+      "Variables do not appear in denominators",
+      "Variables are under radical signs",
+      "Variables do not have exponents other than 1"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 23,
+    "text": "A system of linear equations is a collection of which of the following?",
+    "options": [
+      "Non-linear equations",
+      "Linear equations",
+      "Inequalities",
+      "Quadratic equations"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 24,
+    "text": "What does the solution of a linear system represent graphically for two equations with two variables?",
+    "options": [
+      "A curve",
+      "A single point of intersection",
+      "Parallel lines",
+      "A plane"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 25,
+    "text": "A linear system is said to be consistent if it has:",
+    "options": [
+      "No solution",
+      "Exactly one solution",
+      "Infinitely many solutions",
+      "Either a unique solution or infinitely many solutions"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 26,
+    "text": "What is an inconsistent linear system?",
+    "options": [
+      "A system with exactly one solution",
+      "A system with infinitely many solutions",
+      "A system with no solution",
+      "A system that cannot be represented by a matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 27,
+    "text": "When two linear systems have the same solution set, they are called:",
+    "options": [
+      "Similar systems",
+      "Identical systems",
+      "Equivalent systems",
+      "Homogeneous systems"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 28,
+    "text": "Which matrix represents only the coefficients of the variables in a linear system?",
+    "options": [
+      "Augmented matrix",
+      "Identity matrix",
+      "Coefficient matrix",
+      "Zero matrix"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 29,
+    "text": "To solve a system of linear equations, we often transform the augmented matrix into a simpler form using which operations?",
+    "options": [
+      "Matrix inversions",
+      "Determinant calculations",
+      "Elementary row operations",
+      "Matrix transpositions"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 30,
+    "text": "Which of the following is NOT an elementary row operation?",
+    "options": [
+      "Interchanging two rows",
+      "Multiplying a row by a non-zero constant",
+      "Adding a multiple of one row to another row",
+      "Dividing a row by zero"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 31,
+    "text": "What happens to the solution set of a linear system when an elementary row operation is performed on its augmented matrix?",
+    "options": [
+      "It changes completely",
+      "It remains the same",
+      "It becomes empty",
+      "It becomes infinite"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 32,
+    "text": "In a 3D graphical representation, what does a system of three linear equations represent?",
+    "options": [
+      "Three points",
+      "Three lines",
+      "Three planes",
+      "Three vectors"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 33,
+    "text": "If two planes in a 3D system intersect, what is their intersection?",
+    "options": [
+      "A point",
+      "A line",
+      "A plane",
+      "Nothing"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 34,
+    "text": "What does a consistent system with infinitely many solutions imply graphically for two lines?",
+    "options": [
+      "They are parallel",
+      "They intersect at one point",
+      "They are the same line",
+      "They are perpendicular"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 35,
+    "text": "The process of using elementary row operations to reduce a matrix to a simpler form is called:",
+    "options": [
+      "Matrix addition",
+      "Matrix multiplication",
+      "Row reduction",
+      "Determinant calculation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 36,
+    "text": "Which operation replaces one row by the sum of itself and a multiple of another row?",
+    "options": [
+      "Interchange",
+      "Scaling",
+      "Replacement",
+      "Transposition"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 37,
+    "text": "To solve a linear system, the goal of row operations is typically to transform the augmented matrix into which form?",
+    "options": [
+      "Identity form",
+      "Zero matrix form",
+      "Echelon form or Reduced Echelon form",
+      "Diagonal form"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 38,
+    "text": "What is the purpose of multiplying a row by a non-zero constant in elementary row operations?",
+    "options": [
+      "To change the solution set",
+      "To scale the equation represented by that row",
+      "To interchange rows",
+      "To add two equations"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 39,
+    "text": "Consider the augmented matrix of a linear system. What does a row of all zeros except for a non-zero entry in the last column indicate?",
+    "options": [
+      "A unique solution",
+      "Infinitely many solutions",
+      "No solution (inconsistent system)",
+      "A trivial solution"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 40,
+    "text": "What is the first step in solving a linear system using an augmented matrix?",
+    "options": [
+      "Calculate the determinant of the coefficient matrix",
+      "Write down the coefficient matrix",
+      "Form the augmented matrix for the system",
+      "Check if the system is consistent"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 41,
+    "text": "What is the leading entry of a row in a matrix?",
+    "options": [
+      "The last non-zero entry in the row",
+      "The leftmost non-zero entry in the row",
+      "Any non-zero entry in the row",
+      "The largest entry in the row"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 42,
+    "text": "In an echelon form matrix, where are all non-zero rows located?",
+    "options": [
+      "Below any rows of all zeros",
+      "Above any rows of all zeros",
+      "In the middle of the matrix",
+      "Anywhere within the matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 43,
+    "text": "A matrix is in echelon form if the leading entry of each non-zero row is to the right of the leading entry of which row?",
+    "options": [
+      "The row below it",
+      "The row above it",
+      "Any other row in the matrix",
+      "The last row"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 44,
+    "text": "In an echelon form matrix, what must be true about all entries in a column below a leading entry?",
+    "options": [
+      "They must be positive",
+      "They must be negative",
+      "They must be zero",
+      "They can be any real number"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 45,
+    "text": "Which of the following is an additional property for a matrix to be in reduced echelon form, compared to echelon form?",
+    "options": [
+      "All leading entries must be even numbers",
+      "All leading entries must be 1, and are the only non-zero entries in their columns",
+      "All entries must be integers",
+      "The matrix must be square"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 46,
+    "text": "Is the reduced echelon form of a matrix unique?",
+    "options": [
+      "No, it depends on the elementary row operations used",
+      "Yes, every matrix has a unique reduced echelon form",
+      "Only for square matrices",
+      "Only for matrices with all non-zero entries"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 47,
+    "text": "What is a pivot position in a matrix?",
+    "options": [
+      "Any non-zero entry",
+      "A position that contains a leading 1 in the reduced echelon form",
+      "The last entry in the last row",
+      "The first entry in the first row"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 48,
+    "text": "What is a pivot column?",
+    "options": [
+      "A column that contains a leading entry in the original matrix",
+      "A column that contains a pivot position",
+      "A column of all zeros",
+      "The last column of the matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 49,
+    "text": "The process of converting a matrix to echelon form is called what phase of row reduction?",
+    "options": [
+      "Backward phase",
+      "Forward phase",
+      "Reduction phase",
+      "Expansion phase"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 50,
+    "text": "What is the name of the algorithm used to reduce a matrix to echelon form or reduced echelon form?",
+    "options": [
+      "Newton-Raphson method",
+      "Gaussian elimination",
+      "Least squares method",
+      "Jacobi method"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 51,
+    "text": "Variables corresponding to pivot columns in a linear system are called:",
+    "options": [
+      "Free variables",
+      "Dependent variables",
+      "Basic variables",
+      "Constant variables"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 52,
+    "text": "If a column in the echelon form of an augmented matrix does NOT contain a pivot position (excluding the last column), the corresponding variable is a:",
+    "options": [
+      "Basic variable",
+      "Dependent variable",
+      "Constant variable",
+      "Free variable"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 53,
+    "text": "When a linear system has free variables, how many solutions does it typically have?",
+    "options": [
+      "Exactly one solution",
+      "No solution",
+      "Infinitely many solutions",
+      "Two solutions"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 54,
+    "text": "To solve a linear system using row reduction, after obtaining the reduced echelon form, what is the next step?",
+    "options": [
+      "Calculate the determinant",
+      "Convert back to a system of equations",
+      "Multiply by the inverse matrix",
+      "Find the transpose of the matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 55,
+    "text": "Which method is also known as Gaussian-Jordan Elimination?",
+    "options": [
+      "Only the forward phase of row reduction",
+      "Only the backward phase of row reduction",
+      "The entire row reduction algorithm to obtain reduced echelon form",
+      "The method to find the determinant"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 56,
+    "text": "If every column in the coefficient matrix of a linear system is a pivot column, what kind of solution does the system have?",
+    "options": [
+      "No solution",
+      "Infinitely many solutions",
+      "Exactly one solution",
+      "Only the trivial solution"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 57,
+    "text": "A linear system is consistent if and only if the rightmost column of the augmented matrix is NOT a:",
+    "options": [
+      "Pivot column",
+      "Free variable column",
+      "Column of zeros",
+      "Identity column"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 58,
+    "text": "What is the main goal of row reduction when solving a system of linear equations?",
+    "options": [
+      "To find the determinant of the matrix",
+      "To simplify the system into an equivalent one that is easy to solve",
+      "To increase the number of variables",
+      "To convert the matrix into a square matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 59,
+    "text": "When solving a system, if a free variable exists, it can take on:",
+    "options": [
+      "Only a value of zero",
+      "Only a specific non-zero value",
+      "Any real value",
+      "Only integer values"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 60,
+    "text": "The existence and uniqueness theorem for linear systems relates to the presence of which element in the augmented matrix?",
+    "options": [
+      "The number of rows",
+      "The number of columns",
+      "Pivot positions",
+      "The largest entry"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 61,
+    "text": "What does R^n denote?",
+    "options": [
+      "The set of all real numbers",
+      "The set of n-dimensional vectors with real entries",
+      "The set of complex numbers",
+      "The set of all matrices of size n x n"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 62,
+    "text": "Geometrically, a vector can be thought of as a point in space or what else?",
+    "options": [
+      "A line segment",
+      "An arrow",
+      "A circle",
+      "A plane"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 63,
+    "text": "The sum of two vectors u and v in R^n is obtained by adding their corresponding what?",
+    "options": [
+      "Magnitudes",
+      "Directions",
+      "Entries",
+      "Lengths"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 64,
+    "text": "If u and v are vectors in R^n, which property states that u + v = v + u?",
+    "options": [
+      "Associative property of vector addition",
+      "Distributive property",
+      "Commutative property of vector addition",
+      "Additive identity"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 65,
+    "text": "A linear combination of vectors v1, v2, ..., vp with weights c1, c2, ..., cp is given by what expression?",
+    "options": [
+      "v1 + v2 + ... + vp",
+      "c1v1 * c2v2 * ... * cpvp",
+      "c1v1 + c2v2 + ... + cpvp",
+      "c1 + c2 + ... + cp"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 66,
+    "text": "The span of a set of vectors {v1, ..., vp} is the set of all possible what?",
+    "options": [
+      "Scalar multiples of the vectors",
+      "Differences of the vectors",
+      "Linear combinations of the vectors",
+      "Products of the vectors"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 67,
+    "text": "Geometrically, the span of a single non-zero vector in R^2 represents what?",
+    "options": [
+      "A point",
+      "A line through the origin",
+      "A plane through the origin",
+      "The entire R^2 space"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 68,
+    "text": "If b is in the span of {v1, ..., vp}, then the vector equation x1v1 + ... + xpvp = b has what kind of solution?",
+    "options": [
+      "No solution",
+      "At least one solution",
+      "Exactly one solution",
+      "Only the trivial solution"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 69,
+    "text": "What is the matrix-vector product Ax defined as?",
+    "options": [
+      "The sum of the rows of A times x",
+      "A linear combination of the columns of A using the entries of x as weights",
+      "The product of the rows of A and columns of x",
+      "The element-wise product of A and x"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 70,
+    "text": "For a matrix A and vectors u, v, the property A(u + v) = Au + Av illustrates which concept?",
+    "options": [
+      "Commutativity",
+      "Associativity",
+      "Scalar multiplication",
+      "Linearity of matrix multiplication"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 71,
+    "text": "The equation Ax = b has a solution if and only if b is a linear combination of what?",
+    "options": [
+      "The rows of A",
+      "The columns of A",
+      "The entries of x",
+      "The constants on the right-hand side"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 72,
+    "text": "If A is an m x n matrix, and x is a vector in R^n, what is the dimension of the resulting vector Ax?",
+    "options": [
+      "n x 1",
+      "m x 1",
+      "1 x n",
+      "1 x m"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 73,
+    "text": "Which property states that A(cu) = c(Au) for a scalar c and vector u?",
+    "options": [
+      "Distributive property",
+      "Associative property",
+      "Scalar multiple property of matrix-vector product",
+      "Commutative property"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 74,
+    "text": "The vector equation x1v1 + x2v2 + ... + xpvp = b is equivalent to which type of system?",
+    "options": [
+      "A single equation with one variable",
+      "A non-linear system",
+      "A system of linear equations",
+      "An inequality"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 75,
+    "text": "What is the relationship between the vector equation x1v1 + ... + xpvp = b and the augmented matrix [v1 v2 ... vp b]?",
+    "options": [
+      "They are unrelated",
+      "They represent the same linear problem",
+      "One is the inverse of the other",
+      "The vector equation is derived from the determinant of the augmented matrix"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 76,
+    "text": "If A is a matrix and b is a vector, and the equation Ax = b is consistent, what does this imply about b?",
+    "options": [
+      "b is the zero vector",
+      "b is linearly independent of the columns of A",
+      "b is a linear combination of the columns of A",
+      "b is orthogonal to the rows of A"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 77,
+    "text": "For Ax = b to have a solution for every possible b in R^m, what must be true about the columns of A?",
+    "options": [
+      "They must be linearly dependent",
+      "They must span R^m",
+      "They must be orthogonal",
+      "They must be identical"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 78,
+    "text": "If a matrix A has a pivot position in every row, then for each b in R^m, the equation Ax = b has at least one solution. This statement refers to which theorem?",
+    "options": [
+      "The Invertible Matrix Theorem",
+      "The Unique Solution Theorem",
+      "The Existence of Solutions Theorem (or relevant part of Ax=b properties)",
+      "The Rank Theorem"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 79,
+    "text": "What is the zero vector in R^n?",
+    "options": [
+      "A vector with all entries equal to 1",
+      "A vector with all entries equal to 0",
+      "A vector that is orthogonal to all other vectors",
+      "A vector with negative entries"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 80,
+    "text": "When performing matrix-vector multiplication Ax, the number of columns in A must equal what?",
+    "options": [
+      "The number of rows in x",
+      "The number of entries in x",
+      "The number of rows in A",
+      "The number of entries in b (resultant vector)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 81,
+    "text": "A linear system Ax = 0 is called a:",
+    "options": [
+      "Non-homogeneous system",
+      "Consistent system",
+      "Homogeneous system",
+      "Inconsistent system"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 82,
+    "text": "Every homogeneous system Ax = 0 always has at least one solution, which is called the:",
+    "options": [
+      "Principal solution",
+      "Trivial solution",
+      "Complex solution",
+      "Non-zero solution"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 83,
+    "text": "A homogeneous system Ax = 0 has a non-trivial solution if and only if the equation has at least one:",
+    "options": [
+      "Pivot position",
+      "Free variable",
+      "Basic variable",
+      "Zero row"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 84,
+    "text": "The solution set of a homogeneous equation Ax = 0 can be expressed in which form?",
+    "options": [
+      "Cartesian form",
+      "Parametric vector form",
+      "Polar form",
+      "Matrix inverse form"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 85,
+    "text": "If a non-homogeneous equation Ax = b is consistent, its solution set is obtained by translating the solution set of which system?",
+    "options": [
+      "The identity matrix equation",
+      "The original non-homogeneous system",
+      "The associated homogeneous system Ax = 0",
+      "A different non-linear system"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 86,
+    "text": "A set of vectors {v1, ..., vp} is linearly independent if the vector equation c1v1 + ... + cpvp = 0 has what kind of solution?",
+    "options": [
+      "Only the trivial solution (all c_i = 0)",
+      "Only non-trivial solutions",
+      "Infinitely many solutions",
+      "No solution"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 87,
+    "text": "If a set of vectors is linearly dependent, what does it imply about at least one of the vectors?",
+    "options": [
+      "It is the zero vector",
+      "It is a linear combination of the other vectors",
+      "It is orthogonal to all other vectors",
+      "It has a magnitude of one"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 88,
+    "text": "If a set of vectors contains the zero vector, then the set is:",
+    "options": [
+      "Linearly independent",
+      "Linearly dependent",
+      "Orthogonal",
+      "Normalized"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 89,
+    "text": "When are two vectors in R^n linearly dependent?",
+    "options": [
+      "If they are orthogonal",
+      "If one is a scalar multiple of the other",
+      "If their dot product is zero",
+      "If their sum is the zero vector"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 90,
+    "text": "A transformation T is linear if it satisfies which two properties?",
+    "options": [
+      "T(u+v) = T(u) - T(v) and T(cu) = c + T(u)",
+      "T(u+v) = T(u)T(v) and T(cu) = cT(u)",
+      "T(u+v) = T(u) + T(v) and T(cu) = cT(u)",
+      "T(u+v) = T(u) + T(v) and T(cu) = T(u) + c"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 91,
+    "text": "For a matrix A, the mapping T(x) = Ax is called what type of transformation?",
+    "options": [
+      "Non-linear transformation",
+      "Scalar transformation",
+      "Matrix transformation",
+      "Identity transformation"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 92,
+    "text": "The set of all possible images T(x) for x in the domain of T is called the:",
+    "options": [
+      "Codomain",
+      "Range",
+      "Domain",
+      "Kernel"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 93,
+    "text": "What are the columns of the standard matrix A for a linear transformation T: R^n -> R^m?",
+    "options": [
+      "The rows of the identity matrix",
+      "The images of the standard basis vectors of R^n under T",
+      "The zero vector",
+      "Randomly chosen vectors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 94,
+    "text": "A linear transformation T: R^n -> R^m is one-to-one if:",
+    "options": [
+      "Every vector in the codomain has at least one pre-image",
+      "Every vector in the codomain has exactly one pre-image",
+      "T(x) = 0 only for x = 0",
+      "Its range is equal to its codomain"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 95,
+    "text": "A linear transformation T: R^n -> R^m is onto R^m if:",
+    "options": [
+      "Every vector in R^n maps to a unique vector in R^m",
+      "The range of T is all of R^m",
+      "The equation T(x)=0 has only the trivial solution",
+      "Its standard matrix has a pivot in every column"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 96,
+    "text": "If A, B, and C are matrices such that the products are defined, which property holds for matrix multiplication?",
+    "options": [
+      "AB = BA (Commutativity)",
+      "A(BC) = (AB)C (Associativity)",
+      "A+B = B+A (Commutativity of Addition)",
+      "A + (B+C) = (A+B) + C (Associativity of Addition)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 97,
+    "text": "The (i,j)-th entry of the product AB is computed by multiplying the i-th row of A by what?",
+    "options": [
+      "The i-th column of B",
+      "The j-th row of B",
+      "The j-th column of B",
+      "The i-th row of A"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 98,
+    "text": "What is the transpose of a matrix A (denoted A^T)?",
+    "options": [
+      "A matrix where all entries are negated",
+      "A matrix obtained by interchanging the rows and columns of A",
+      "A matrix with only the diagonal elements of A",
+      "A matrix where rows are multiplied by a scalar"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 99,
+    "text": "For two matrices A and B, which property is correct regarding the transpose?",
+    "options": [
+      "(AB)^T = A^T B^T",
+      "(AB)^T = B^T A^T",
+      "(AB)^T = A B",
+      "(AB)^T = A^T + B^T"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 100,
+    "text": "If A is an n x n matrix, and there exists an n x n matrix B such that AB = BA = I, then B is called the:",
+    "options": [
+      "Identity matrix",
+      "Transpose of A",
+      "Inverse of A",
+      "Determinant of A"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 101,
+    "text": "The inverse of a 2x2 matrix A = [[a, b], [c, d]] is given by 1/(ad-bc) * [[d, -b], [-c, a]]. What is the term (ad-bc) called?",
+    "options": [
+      "The trace",
+      "The rank",
+      "The determinant",
+      "The cofactor"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 102,
+    "text": "An elementary matrix is one that is obtained by performing a single what on an identity matrix?",
+    "options": [
+      "Matrix multiplication",
+      "Elementary row operation",
+      "Determinant calculation",
+      "Transpose operation"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 103,
+    "text": "What is the algorithm for finding the inverse of a matrix A?",
+    "options": [
+      "Augment A with a zero matrix and row reduce",
+      "Augment A with the identity matrix and row reduce [A | I] to [I | A^-1]",
+      "Augment the identity matrix with A and row reduce",
+      "Calculate the determinant and divide by A"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 104,
+    "text": "If an n x n matrix A is invertible, then the equation Ax = b has how many solutions for each b in R^n?",
+    "options": [
+      "No solution",
+      "Exactly one solution",
+      "Infinitely many solutions",
+      "Two solutions"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 105,
+    "text": "According to the Invertible Matrix Theorem, if A is an n x n matrix, which of the following statements is equivalent to A being invertible?",
+    "options": [
+      "The equation Ax = 0 has a non-trivial solution",
+      "The columns of A are linearly dependent",
+      "The matrix A is row equivalent to the n x n identity matrix",
+      "The equation Ax = b has no solution for some b"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 106,
+    "text": "If an n x n matrix A is invertible, what can be said about its determinant?",
+    "options": [
+      "det(A) = 0",
+      "det(A) = 1",
+      "det(A) is undefined",
+      "det(A) ≠ 0"
+    ],
+    "correct": 4
+  },
+  {
+    "id": 107,
+    "text": "Matrices whose entries are themselves matrices are called:",
+    "options": [
+      "Scalar matrices",
+      "Block matrices or partitioned matrices",
+      "Diagonal matrices",
+      "Identity matrices"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 108,
+    "text": "When multiplying partitioned matrices, what must be true about the column and row partitions?",
+    "options": [
+      "They must be of the same size",
+      "The column partition of the left matrix must match the row partition of the right matrix",
+      "They must both be square",
+      "They must contain only zeros"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 109,
+    "text": "A factorization of a matrix A into the product of a lower triangular matrix L and an upper triangular matrix U is called:",
+    "options": [
+      "QR factorization",
+      "Singular Value Decomposition (SVD)",
+      "LU factorization",
+      "Cholesky factorization"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 110,
+    "text": "To solve Ax = b using LU factorization, what is the first step after finding A = LU?",
+    "options": [
+      "Solve Ly = b for y",
+      "Solve Ux = y for x",
+      "Find the inverse of L",
+      "Find the determinant of U"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 111,
+    "text": "What is the advantage of using LU factorization for solving Ax=b when multiple b vectors are involved?",
+    "options": [
+      "It makes the solution process slower",
+      "It requires more memory",
+      "It saves computations because L and U are computed once",
+      "It only works for square matrices"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 112,
+    "text": "Which method is an iterative technique for solving a system of linear equations?",
+    "options": [
+      "Gaussian elimination",
+      "Cramer's Rule",
+      "Jacobi method",
+      "Matrix inversion"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 113,
+    "text": "What is the determinant of a 2x2 matrix [[a, b], [c, d]]?",
+    "options": [
+      "ac - bd",
+      "ad + bc",
+      "ad - bc",
+      "ab - cd"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 114,
+    "text": "The cofactor C_ij of an entry a_ij in a matrix is given by what formula?",
+    "options": [
+      "M_ij",
+      "(-1)^(i+j) * M_ij",
+      "i + j",
+      "(-1)^(i*j) * M_ij"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 115,
+    "text": "For a triangular matrix (upper or lower), its determinant is the product of what?",
+    "options": [
+      "All its entries",
+      "The entries on its main diagonal",
+      "The entries on its anti-diagonal",
+      "The entries in its first row"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 116,
+    "text": "If a multiple of one row of a matrix A is added to another row to produce a matrix B, how does det(B) relate to det(A)?",
+    "options": [
+      "det(B) = -det(A)",
+      "det(B) = c * det(A)",
+      "det(B) = det(A)",
+      "det(B) = 1/det(A)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 117,
+    "text": "If two rows of a matrix are interchanged to produce a matrix B, how does det(B) relate to det(A)?",
+    "options": [
+      "det(B) = det(A)",
+      "det(B) = -det(A)",
+      "det(B) = 0",
+      "det(B) = 1"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 118,
+    "text": "If a matrix A has two identical rows, what is its determinant?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Undefined"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 119,
+    "text": "For two n x n matrices A and B, which property of determinants is true?",
+    "options": [
+      "det(A+B) = det(A) + det(B)",
+      "det(AB) = det(A) * det(B)",
+      "det(kA) = k * det(A)",
+      "det(A^T) = -det(A)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 120,
+    "text": "A square matrix A is invertible if and only if its determinant is:",
+    "options": [
+      "Zero",
+      "Equal to one",
+      "Non-zero",
+      "Undefined"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 121,
+    "text": "Cramer's Rule is used to find the solution of a linear system Ax=b when:",
+    "options": [
+      "The determinant of A is zero",
+      "A is a rectangular matrix",
+      "A is an invertible matrix",
+      "The system is inconsistent"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 122,
+    "text": "The absolute value of the determinant of a 2x2 matrix represents the area of what geometric shape formed by its column vectors?",
+    "options": [
+      "A triangle",
+      "A circle",
+      "A parallelogram",
+      "A square"
+    ],
+    "correct": 3
+  }
+]
