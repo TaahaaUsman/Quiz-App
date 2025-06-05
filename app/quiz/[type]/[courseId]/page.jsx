@@ -3,7 +3,7 @@ import { QuizPage } from "@/components";
 const getQuizDetails = async (type, courseId) => {
 
   try {
-    const res = await fetch(`/api/quiz/getQuiz`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/quiz/getQuiz`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ type, courseId }),
