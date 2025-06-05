@@ -8,6 +8,9 @@ const getCourseList = async () => {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/courses`, {
       headers: { Cookie: cookie },
+      next: {
+        revalidate: 86400, // cache for 1 day (60 * 60 * 24 seconds)
+      },
     });
 
     const json = await res.json();
