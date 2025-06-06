@@ -199,19 +199,16 @@ const QuizPage = ({ quiz, courseDetails, courseId }) => {
 
 
   return (
-    <div className="h-lvh bg-gray-100">
+    <div className="h-screen m-0 p-0 bg-gray-200">
 
-      {isMobile? <div></div> : <div>
-        
 
+      {/* User button */}
       <div
-      className="absolute h-28 w-24 top-2 right-4 sm:right-10 z-10 bg-gray-500 rounded-full flex items-center justify-center cursor-pointer"
+      className="hidden absolute h-28 w-24 top-2 right-4 sm:right-10 z-10 bg-gray-500 rounded-full md:flex items-center justify-center cursor-pointer"
       style={{ fontSize: '70px', color: 'white' }}
     >
       <FaUser />
     </div>
-
-    </div>}
     
 
       {/* Navbar */}
@@ -230,15 +227,19 @@ const QuizPage = ({ quiz, courseDetails, courseId }) => {
         </div>
       </nav>
 
-      <div className="w-full h-[80%] flex gap-1">
-        <div className="w-full h-full">
+        {/* Questions/Answer section + Summary */}
+      <div className="w-full h-[75%] md:h-[78%] flex gap-1 flex-col md:flex-row">
+
+        <div className={`w-full h-full ${showSummary? "w-[83%]" : "w-full"} flex flex-col`}>
 
       <div
-        className="bg-cover bg-center h-[45%]"
+        className="h-1/2 bg-cover bg-center"
         style={{ backgroundImage: `url(${bg.src})` }}
       >
-        <div className="bg-purple-700/40">
-          <div className="flex justify-between items-center py-1 md:py-2 xl:py-4 pr-2 sm:pr-20 md:pr-36">
+        <div className="h-full bg-purple-700/40">
+
+          <div className="h-[20%] flex justify-between items-center py-1 md:py-2 xl:py-4 pr-2 sm:pr-20 md:pr-36">
+
             <p className="text-white text-base sm:text-lg font-semibold pl-2">
               Question No : {currentIndex + 1} of {questions.length}
             </p>
@@ -257,23 +258,25 @@ const QuizPage = ({ quiz, courseDetails, courseId }) => {
             </div>
           </div>
 
-          <div className="bg-white p-1 w-full h-auto shadow-md">
+          <div className="h-[60%] bg-white p-1 w-full shadow-md">
             <textarea
-              className="font-bold w-full h-36 lg:h-40 xl:h-48 outline-none border-2 border-gray-200 p-2"
+              className="font-bold w-full h-full outline-none border-2 border-gray-200 p-2"
               readOnly
               value={currentQuestion?.questionText}
             />
           </div>
 
           <div>
-            <p className="text-white text-base sm:text-lg font-semibold px-2 py-1 md:py-2 xl:py-4">
+            <p className="h-[20%] text-white text-base sm:text-lg font-semibold px-2 py-1 md:py-2 xl:py-4">
               Answer
             </p>
           </div>
+
+
         </div>
       </div>
 
-      <div className="p-7 lg:py-7 xl:py-8 bg-white text-[17px] shadow-md overflow-y-auto h-[55%]">
+      <div className="h-1/2 p-7 lg:py-7 xl:py-8 bg-white text-[17px] shadow-md overflow-y-auto">
       {currentQuestion?.options?.map((option, index) => {
           let bgColor = "";
 
@@ -302,84 +305,80 @@ const QuizPage = ({ quiz, courseDetails, courseId }) => {
           );
         })}
       </div>
-      </div>
 
 
-      {isMobile? <></> : <div>
+        </div>
 
-        
 
-        {/* ToggleSummary button */}
-      <div className="absolute right-0 top-80 z-10">
-      <button
-        onClick={() => setShowSummary(!showSummary)}
-        className="bg-purple-700/80 text-white px-4 py-4 rounded-l-md flex items-center gap-1 cursor-pointer"
-      >
-        {showSummary ? (
-          <FaAngleDoubleRight style={{ fontSize: '1rem', color: 'white' }} />
-        ) : (
-          <FaAngleDoubleLeft style={{ fontSize: '1rem', color: 'white' }} />
-        )}
-      </button>
+        <div className={`hidden md:block h-full`}>
+  {/* ToggleSummary button */}
+  <div className="absolute right-0 top-80 z-10">
+    <button
+      onClick={() => setShowSummary(!showSummary)}
+      className="bg-purple-700/80 text-white px-4 py-4 rounded-l-md flex items-center gap-1 cursor-pointer"
+    >
+      {showSummary ? (
+        <FaAngleDoubleRight style={{ fontSize: '1rem', color: 'white' }} />
+      ) : (
+        <FaAngleDoubleLeft style={{ fontSize: '1rem', color: 'white' }} />
+      )}
+    </button>
+  </div>
+
+  {/* Summary content */}
+  <div className={`relative h-full bg-gray-100 ${showSummary ? 'block' : 'hidden'}`}>
+    {/* Header */}
+    <div
+      className="bg-cover bg-center h-auto p-3 pb-4"
+      style={{ backgroundImage: `url(${bg.src})` }}
+    >
+      <p className="text-white text-lg font-semibold">Summary</p>
     </div>
 
-    {/* Summary */}
-
-    <div className={`relative h-full bg-gray-100 ${showSummary? "block" : "hidden"}`}>
-      {/* First section */}
-      <div
-        className="bg-cover bg-center h-auto p-3 pb-4"
-        style={{ backgroundImage: `url(${bg.src})` }}
-      >
-        <p className="text-white text-lg font-semibold">Summary</p>
-      </div>
-      {/* Second section */}
-      <div className="p-2" style={{ maxHeight: '300px', overflowY: 'auto' }}>
-        <div className="grid grid-cols-6 gap-4">
-          {questions.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => handleSwitchQuestion(index)}
-              className={`cursor-pointer w-6 h-6 rounded-xl flex items-center justify-center text-sm font-semibold ${
-                answers[index] !== null
-                  ? answers[index] === questions[index].correctOptionIndex
-                    ? 'bg-green-500 text-white'
-                    : 'bg-red-500 text-white'
-                  : 'bg-gray-200'
-              }`}
-            >
-              {index + 1}
-            </div>
-          ))}
-        </div>
-      </div>
-      {/* Third section */}
-      <div className="absolute bottom-0 w-full p-4 bg-white">
-        <div className="flex items-center justify-between">
-          <span>Attempted: {attempted}</span>
-          <span>Total: {totalQuestions}</span>
-        </div>
-        <div className="mt-2">
-          <progress
-            className="w-full"
-            value={attempted}
-            max={totalQuestions}
-          ></progress>
-          <div className="text-center mt-1">
-            {progressPercentage.toFixed(2)}%
+    {/* Question status grid */}
+    <div className="p-2" style={{ maxHeight: '300px', overflowY: 'auto' }}>
+      <div className="grid grid-cols-6 gap-4">
+        {questions.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handleSwitchQuestion(index)}
+            className={`cursor-pointer w-6 h-6 rounded-xl flex items-center justify-center text-sm font-semibold ${
+              answers[index] !== null
+                ? answers[index] === questions[index].correctOptionIndex
+                  ? 'bg-green-500 text-white'
+                  : 'bg-red-500 text-white'
+                : 'bg-gray-200'
+            }`}
+          >
+            {index + 1}
           </div>
-        </div>
+        ))}
       </div>
     </div>
 
-    </div>}
+    {/* Summary footer */}
+    <div className="absolute bottom-0 w-full p-4 bg-white">
+      <div className="flex items-center justify-between">
+        <span>Attempted: {attempted}</span>
+        <span>Total: {totalQuestions}</span>
+      </div>
+      <div className="mt-2">
+        <progress className="w-full" value={attempted} max={totalQuestions}></progress>
+        <div className="text-center mt-1">
+          {progressPercentage.toFixed(2)}%
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
     
       </div>
       
 
       {/* Navigation */}
-      <div className={`absolute bottom-0 w-full ${isMobile? "h-[15%]" : "h-[10%]"}  text-sm mb-2`}>
-        <div className="w-full h-24 bg-gray-200">
+      <div className={`h-[13%] md:h-[10%] text-sm`}>
+        <div className="w-full h-full bg-gray-200">
           <div className="h-full flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
 
             <div className="flex flex-row gap-2 sm:gap-4 w-full md:w-auto">
