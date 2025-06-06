@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Loader from '@/app/(Frontend)/(home)/Components/Loader';
+import { Loader } from '../../../components';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -27,7 +27,7 @@ export default function VerifyEmailPage() {
 
           const handleResendCode = async () => {
 
-            const response = await fetch("/api/auth/resend-code", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/resend-code`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export default function VerifyEmailPage() {
           
               try {
                 setLoading(true);
-                  const response = await fetch("/api/auth/verify-email", {
+                  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/verify-email`, {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",
