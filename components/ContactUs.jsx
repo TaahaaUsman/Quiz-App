@@ -38,6 +38,7 @@ export default function ContactUsPage() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ uploadedFiles: files, description }),
+      credentials: "include",
       cache: "no-store",
     });
 

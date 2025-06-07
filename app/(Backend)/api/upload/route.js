@@ -21,6 +21,7 @@ export async function POST(request) {
     const { uploadedFiles, description } = formData;
 
     if (!uploadedFiles || !description) {
+      d;
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
