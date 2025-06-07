@@ -38,7 +38,7 @@ export default function Navbar() {
             <Link href="/courses" className="text-gray-700 hover:text-blue-500">
               Courses
             </Link>
-            <Link href="/contactUs" className="text-gray-700 hover:text-blue-500">
+            <Link href="/contactus" className="text-gray-700 hover:text-blue-500">
               Contact Us
             </Link>
           </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
               Courses
             </Link>
             <Link
-              href="/contact"
+              href="/contactus"
               onClick={() => setMobileOpen(false)}
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
             >

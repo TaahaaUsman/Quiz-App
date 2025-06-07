@@ -8,7 +8,7 @@ export async function POST(request) {
   try {
     await db();
 
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get("token")?.value;
     const decoded = verifyToken(token);
     const userId = decoded?.id || decoded?._id;

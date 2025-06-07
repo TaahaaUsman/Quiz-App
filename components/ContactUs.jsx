@@ -2,12 +2,13 @@
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import ContentLoader from 'react-content-loader';
+import { CldUploadWidget } from 'next-cloudinary'
 
 export default function ContactUsPage() {
   const [files, setFiles] = useState([]);
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(false);
-
+  const [response, setResponse] = useState('');
 
   const notify = (message, type = 'success') => {
     toast(message, {
@@ -32,44 +33,36 @@ export default function ContactUsPage() {
 
     setLoading(true);
 
-    try {
-      // Upload files one by one to Cloudinary
-      const uploadedFilesUrls = [];
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/upload`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ uploadedFiles: files, description }),
+      cache: "no-store",
+    });
 
-      for (const file of files) {
-        const formData = new FormData();
-        formData.append('file', file);
-        formData.append('upload_preset', 'your_upload_preset'); // Important
-        formData.append('cloud_name', 'your_cloud_name');
+    setLoading(false);
+    
+    const json = await res.json();
 
-        const response = await axios.post(
-          'https://api.cloudinary.com/v1_1/your_cloud_name/image/upload',
-          formData
-        );
-
-        uploadedFilesUrls.push(response.data.secure_url);
-      }
-
-      // Now send the uploaded file URLs + description to backend
-      const sendToBackend = await axios.post('/api/contact', {
-        uploadedFiles: uploadedFilesUrls,
-        description: description,
-      });
-
-      if (sendToBackend.data.success) {
-        notify("Submitted successfully!");
-        setFiles([]);
-        setDescription('');
-      } else {
-        notify(sendToBackend.data.message || "Something went wrong!", "error");
-      }
-
-    } catch (error) {
-      console.error(error);
-      notify("Upload failed!", "error");
-    } finally {
-      setLoading(false);
+    if(json.message) {
+      notify(json.message, "success");
+      setResponse(json.message);
+    } else {
+      notify(json.error, "error");
+      setResponse(json.error);
     }
+
+    setFiles([]);
+    setDescription('');
+    setResponse('');
+
+    return;
+    
+  } catch (err) {
+    console.error("Server upload error:", err);
+    return null;
+  }
   };
 
   return (
@@ -105,16 +98,28 @@ export default function ContactUsPage() {
       <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
 
-        <div className="mb-4">
-          <label className="block text-gray-700 mb-2">Upload Files</label>
-          <input
-  type="file"
-  multiple
-  onChange={(e) => setFiles(Array.from(e.target.files))}
-  className="w-full border border-gray-300 rounded p-2"
-/>
+        <CldUploadWidget uploadPreset='uploadfiles' onSuccess={({ event, info }) => {
+           if (event === "success" && info?.secure_url) {
+              setFiles(prevFiles => [...prevFiles, info.secure_url]);
+          }
+        }}>
+        {({ open }) => (
+          <button
+            type="button"
+            onClick={() => open()}
+            className="w-full cursor-pointer border border-gray-300 text-gray-500 rounded p-2 text-left mb-10"
+          >
+            Upload Files
+          </button>
 
-        </div>
+        )}
+        </CldUploadWidget>
+
+        {files.length > 0 && (
+          <div className="text-green-600 mt-2 mb-4 font-medium">
+              ✅ Files uploaded successfully. Now type a description and submit!
+          </div>
+    )}
 
         <div className="mb-4">
           <label className="block text-gray-700 mb-2">Description</label>
@@ -134,8 +139,14 @@ export default function ContactUsPage() {
         >
           {loading ? "Sending..." : "Submit"}
         </button>
+        {response && 
+        <div className='text-sm font-semibold text-gray-700 text-center'>
+          {response}
+        </div>
+        }
 
         <ToastContainer />
+        
       </form>
       }
     </div>
