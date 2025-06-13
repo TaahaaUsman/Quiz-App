@@ -1,4 +1,3 @@
-// app/api/courses/search/route.js
 import { NextResponse } from "next/server";
 import db from "../../../database/lib/db";
 import User from "../../../database/models/userModel/userSchema";
@@ -10,7 +9,20 @@ export async function DELETE(request) {
     await db();
 
     const cookieStore = await cookies();
-    const token = cookieStore.get("token")?.value;
+    const authHeader = request.headers.get("authorization");
+    const userAgent = request.headers.get("user-agent") || "";
+    const isReactNative =
+      userAgent.includes("Expo") || userAgent.includes("ReactNative");
+
+    let token;
+
+    if (isReactNative) {
+      if (authHeader && authHeader.startsWith("Bearer ")) {
+        token = authHeader.split(" ")[1];
+      }
+    } else {
+      token = cookieStore.get("token")?.value;
+    }
 
     if (!token) {
       return NextResponse.json(

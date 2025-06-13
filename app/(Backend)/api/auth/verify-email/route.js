@@ -8,13 +8,19 @@ export async function POST(request) {
   try {
     await db();
 
-    const email = cookies().get("verifyEmail")?.value;
-    const { code } = await request.json();
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
+    const appType = request.headers.get("x-app-type") || "";
+    const isReactNative = appType === "ReactNative";
+
+    const body = await request.json();
+    const code = body.code;
+    const email = isReactNative
+      ? body.email
+      : cookieStore.get("verifyEmail")?.value;
 
     if (!email) {
       return NextResponse.json(
-        { error: "Email not found in session" },
+        { error: "Email not found in request or session" },
         { status: 400 }
       );
     }
@@ -47,31 +53,55 @@ export async function POST(request) {
     user.emailVerificationExpiry = undefined;
     await user.save();
 
-    // Setting cookie
-
+    // Create JWT token
     const token = createToken(user._id);
 
-    const cookie = await cookies();
-    cookie.set("token", token, {
-      httpOnly: true, // not accessible via js (xss safe)
-      secure: process.env.NODE_ENV === "production", // only sent over HTTPS
-      maxAge: 30 * 24 * 60 * 60, // long lasting 30 days
-      sameSite: "strict", // blocks CSRF
-      path: "/",
-    });
+    const responseBody = {
+      message: "Login successful",
+      token,
+      user: {
+        id: user._id,
+        email: user.email,
+        name: user.name,
+      },
+    };
 
-    // 🧼 Clean up verifyEmail cookie
-    cookie.delete("verifyEmail");
+    const response = NextResponse.json(responseBody, { status: 200 });
 
-    return NextResponse.json(
-      { message: "Email verified & logged in" },
-      { status: 200 }
-    );
+    if (!isReactNative) {
+      cookieStore.set("token", token, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "strict",
+        maxAge: 30 * 24 * 60 * 60, // 30 days
+        path: "/",
+      });
+
+      cookieStore.delete("verifyEmail");
+    }
+
+    return response;
   } catch (err) {
-    console.log("Error verifying email : ", err);
+    console.error("❌ Email verification error:", err);
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }
     );
   }
+}
+
+// CORS preflight
+export async function OPTIONS() {
+  return NextResponse.json(
+    {},
+    {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    }
+  );
 }

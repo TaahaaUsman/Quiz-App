@@ -31,5 +31,6 @@
 
 <h1>Improved Home map details</h1>
 
-1. Plot size = 53 feet west, 35 feet south, 24 feet North, 
+1. Plot size = 53 feet west, 35 feet south, 24 feet North,
 
+In Vercel deployment there is problem ContactUs page is not shown. I have to solve this in next.

@@ -11,7 +11,12 @@ export async function POST(request) {
     const { name, username, email, password, confirmPassword } =
       await request.json();
 
-    // ✅ 1. Input validation (basic)
+    // Check for React Native client
+    const userAgent = request.headers.get("user-agent") || "";
+    const isReactNative =
+      userAgent.includes("Expo") || userAgent.includes("ReactNative");
+
+    // 1. Input validation
     if (!name || !username || !email || !password || !confirmPassword) {
       return NextResponse.json(
         { error: "All fields are required" },
@@ -19,15 +24,15 @@ export async function POST(request) {
       );
     }
 
-    // ✅ 2. Check both passwords are same
+    // 2. Password match
     if (password !== confirmPassword) {
       return NextResponse.json(
-        { error: "Both password should be same" },
+        { error: "Both passwords should be the same" },
         { status: 400 }
       );
     }
 
-    // ✅ 3. Check if user already exists
+    // 3. Existing user check
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return NextResponse.json(
@@ -36,20 +41,20 @@ export async function POST(request) {
       );
     }
 
-    // ✅ 4. Check if username already exists
+    // 4. Existing username check
     const existingUsername = await User.findOne({ username });
     if (existingUsername) {
       return NextResponse.json(
-        { error: "Username is already taken please choose new one" },
+        { error: "Username is already taken" },
         { status: 409 }
       );
     }
 
-    // ✅ 5. Hash password
+    // 5. Hash password
     const salt = await bcrypt.genSalt(11);
     const passwordHash = await bcrypt.hash(password, salt);
 
-    // ✅ 6. Create and save new user
+    // 6. Create user
     const newUser = new User({
       name,
       username,
@@ -57,41 +62,53 @@ export async function POST(request) {
       passwordHash,
     });
 
-    await newUser.save();
-
-    // Creating OTP and sending to the client
-    function generateOTP() {
-      return Math.floor(100000 + Math.random() * 900000).toString(); // 6-digit OTP
-    }
-
-    const otp = generateOTP();
+    // 7. OTP generation and assignment
+    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // 6-digit
     const expiry = new Date(Date.now() + 15 * 60 * 1000); // 15 mins
-
     newUser.emailVerificationCode = otp;
     newUser.emailVerificationExpiry = expiry;
     await newUser.save();
 
+    // 8. Send OTP email
     await sendVerificationEmail(email, otp);
 
-    // Setting the cookie which just set email address for verification use
-    const cookie = await cookies();
-    cookie.set("verifyEmail", newUser.email, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "strict",
-      maxAge: 15 * 60, // 15 mins
-    });
+    // 9. Set cookie only for browser
+    if (!isReactNative) {
+      const cookieStore = await cookies();
+      cookieStore.set("verifyEmail", email, {
+        // httpOnly: true,
+        // secure: process.env.NODE_ENV === "production",
+        // sameSite: "strict",
+        maxAge: 15 * 60, // 15 mins
+        path: "/",
+      });
+    }
 
-    // ✅ 7. Send success response
     return NextResponse.json(
       { message: "User registered and waiting for email verification" },
       { status: 201 }
     );
   } catch (err) {
-    console.log("❌ Error in Register API:", err);
+    console.error("❌ Register API Error:", err);
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }
     );
   }
+}
+
+// CORS handler
+export async function OPTIONS() {
+  return NextResponse.json(
+    {},
+    {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    }
+  );
 }

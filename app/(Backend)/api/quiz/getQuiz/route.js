@@ -1,5 +1,5 @@
 // app/api/quiz/fetch/route.js
-import { NextResponse } from "next/server";
+// import { NextResponse } from "next/server";
 import db from "../../../database/lib/db";
 import Quiz from "../../../database/models/quizModel/quizModel";
 import Course from "@/app/(Backend)/database/models/coursesModel/coursesModel";
@@ -11,18 +11,18 @@ export async function POST(request) {
     const { courseId, type } = await request.json();
 
     if (!courseId || !type) {
-      return NextResponse.json(
+      return createCORSResponse(
         { error: "courseId and type are required" },
-        { status: 400 }
+        400
       );
     }
 
     const quiz = await Quiz.findOne({ courseId, type });
 
     if (!quiz) {
-      return NextResponse.json(
+      return createCORSResponse(
         { error: "No quiz found for this course and type" },
-        { status: 404 }
+        404
       );
     }
 
@@ -31,18 +31,45 @@ export async function POST(request) {
       .lean();
 
     if (!courseDetails) {
-      return NextResponse.json({ error: "No Course found" }, { status: 404 });
+      return createCORSResponse({ error: "No Course found" }, 404);
     }
 
-    return NextResponse.json(
+    return createCORSResponse(
       { success: true, questions: quiz.questions, courseDetails },
-      { status: 200 }
+      200
     );
   } catch (error) {
     console.error("❌ Error fetching quiz questions:", error);
-    return NextResponse.json(
+    return createCORSResponse(
       { success: false, message: "Internal Server Error" },
-      { status: 500 }
+      500
     );
   }
+}
+
+// Handle OPTIONS request for preflight
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: getCORSHeaders(),
+  });
+}
+
+// Utility: Add CORS headers to response
+function getCORSHeaders() {
+  return {
+    "Access-Control-Allow-Origin": "*", // Replace * with specific domain in prod
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+  };
+}
+
+function createCORSResponse(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      ...getCORSHeaders(),
+      "Content-Type": "application/json",
+    },
+  });
 }
