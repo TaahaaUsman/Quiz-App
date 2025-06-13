@@ -1,9 +1,9 @@
-'use client';
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { FiMenu, FiX, FiUser } from 'react-icons/fi';
-import { vu } from '../assets/Images';
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { FiMenu, FiX, FiUser } from "react-icons/fi";
+import { vu } from "../assets/Images";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -38,7 +38,10 @@ export default function Navbar() {
             <Link href="/courses" className="text-gray-700 hover:text-blue-500">
               Courses
             </Link>
-            <Link href="/contactus" className="text-gray-700 hover:text-blue-500">
+            <Link
+              href="/contactus"
+              className="text-gray-700 hover:text-blue-500"
+            >
               Contact Us
             </Link>
           </div>

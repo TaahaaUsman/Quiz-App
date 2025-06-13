@@ -1,12 +1,11 @@
-import { ContactUsPage } from "@/components"
+import { ContactUsPage } from "@/components";
 
-const page = async () => {
-
+const Page = () => {
   return (
     <>
       <ContactUsPage />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

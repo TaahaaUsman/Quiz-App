@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import ContentLoader from "react-content-loader";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import { CldUploadWidget } from "next-cloudinary";
 
 export default function ContactUsPage() {
@@ -42,8 +43,6 @@ export default function ContactUsPage() {
         cache: "no-store",
       });
 
-      setLoading(false);
-
       const json = await res.json();
 
       if (json.message) {
@@ -56,102 +55,85 @@ export default function ContactUsPage() {
 
       setFiles([]);
       setDescription("");
-      setResponse("");
-
-      return;
     } catch (err) {
       console.error("Server upload error:", err);
-      return null;
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="w-full flex items-center justify-center px-6 py-8">
-      {loading ? (
-        <div className="w-full flex items-center justify-center px-6 py-8">
-          <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md">
-            <ContentLoader
-              speed={1.5}
-              width={"100%"}
-              height={400}
-              backgroundColor="#f3f3f3"
-              foregroundColor="#e0e0e0"
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md"
+      >
+        {loading ? (
+          <>
+            <Skeleton height={30} width={150} className="mb-6" />
+            <Skeleton height={44} className="mb-6" />
+            <Skeleton height={20} width={100} className="mb-2" />
+            <Skeleton height={100} className="mb-6" />
+            <Skeleton height={44} />
+          </>
+        ) : (
+          <>
+            <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+
+            <CldUploadWidget
+              uploadPreset="uploadfiles"
+              onSuccess={({ event, info }) => {
+                if (event === "success" && info?.secure_url) {
+                  setFiles((prevFiles) => [...prevFiles, info.secure_url]);
+                }
+              }}
             >
-              {/* Heading */}
-              <rect x="0" y="10" rx="4" ry="4" width="60%" height="24" />
+              {({ open }) => (
+                <button
+                  type="button"
+                  onClick={() => open()}
+                  className="w-full cursor-pointer border border-gray-300 text-gray-500 rounded p-2 text-left mb-10"
+                >
+                  📤 Upload Files
+                </button>
+              )}
+            </CldUploadWidget>
 
-              {/* Upload label */}
-              <rect x="0" y="60" rx="3" ry="3" width="40%" height="18" />
-              <rect x="0" y="85" rx="5" ry="5" width="100%" height="38" />
-
-              {/* Description label */}
-              <rect x="0" y="140" rx="3" ry="3" width="50%" height="18" />
-              <rect x="0" y="165" rx="5" ry="5" width="100%" height="80" />
-
-              {/* Submit button */}
-              <rect x="0" y="260" rx="6" ry="6" width="100%" height="44" />
-            </ContentLoader>
-          </div>
-        </div>
-      ) : (
-        <form
-          onSubmit={handleSubmit}
-          className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md"
-        >
-          <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
-
-          <CldUploadWidget
-            uploadPreset="uploadfiles"
-            onSuccess={({ event, info }) => {
-              if (event === "success" && info?.secure_url) {
-                setFiles((prevFiles) => [...prevFiles, info.secure_url]);
-              }
-            }}
-          >
-            {({ open }) => (
-              <button
-                type="button"
-                onClick={() => open()}
-                className="w-full cursor-pointer border border-gray-300 text-gray-500 rounded p-2 text-left mb-10"
-              >
-                📤 Upload Files
-              </button>
+            {files.length > 0 && (
+              <div className="text-green-600 mt-2 mb-4 font-medium">
+                ✅ Files added successfully. Now type a description and submit!
+              </div>
             )}
-          </CldUploadWidget>
 
-          {files.length > 0 && (
-            <div className="text-green-600 mt-2 mb-4 font-medium">
-              ✅ Files added successfully. Now type a description and submit!
+            <div className="mb-4">
+              <label className="block text-gray-700 mb-2">Description</label>
+              <textarea
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                rows="5"
+                className="w-full border border-gray-300 rounded p-2 resize-none"
+                placeholder="Type your message here..."
+              ></textarea>
             </div>
-          )}
 
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Description</label>
-            <textarea
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              rows="5"
-              className="w-full border border-gray-300 rounded p-2 resize-none"
-              placeholder="Type your message here..."
-            ></textarea>
-          </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded transition"
+            >
+              {loading ? "Sending..." : "Submit"}
+            </button>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded transition"
-          >
-            {loading ? "Sending..." : "Submit"}
-          </button>
-          {response && (
-            <div className="text-sm font-semibold text-gray-700 text-center">
-              {response}
-            </div>
-          )}
+            {response && (
+              <div className="text-sm font-semibold text-gray-700 text-center mt-4">
+                {response}
+              </div>
+            )}
+          </>
+        )}
 
-          <ToastContainer />
-        </form>
-      )}
+        <ToastContainer />
+      </form>
     </div>
   );
 }

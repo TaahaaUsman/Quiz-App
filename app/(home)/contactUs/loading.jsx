@@ -1,6 +1,5 @@
 import { ContactUsSkeleton } from "@/components";
 
-
-export default function loading () {
-    return <ContactUsSkeleton />
+export default function Loading() {
+  return <ContactUsSkeleton />;
 }

@@ -10,7 +10,6 @@ import CourseList from "./CourseList";
 import ContactUsPage from "./ContactUs";
 import CourseDetailsPage from "./CourseDetails";
 import QuizPage from "./QuizPage";
-import Providers from "./Provider";
 import {
   HomeSkeleton,
   CourseListSkeleton,
@@ -32,7 +31,6 @@ export {
   ContactUsPage,
   CourseDetailsPage,
   QuizPage,
-  Providers,
   HomeSkeleton,
   CourseDetailsSkeleton,
   CourseListSkeleton,
