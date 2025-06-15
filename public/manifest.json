@@ -1,0 +1,22 @@
+{
+  "name": "Virtual University Support Platform",
+  "short_name": "VU Support",
+  "description": "A modern LMS to help Virtual University students learn and practice efficiently.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
